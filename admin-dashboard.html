@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - SSB Lecturette</title>
+
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Local CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container admin-container">
+        <!-- Main Header -->
+        <header class="dashboard-header">
+            <div class="header-title">
+                <i class="fa-solid fa-chart-line"></i>
+                <h1>Admin<br>Dashboard</h1>
+            </div>
+            <button id="logout-btn" class="logout-button">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+            </button>
+        </header>
+
+        <!-- View 1: List of Existing Lecturettes (Visible by default) -->
+        <div id="lecturette-list-view">
+            <div id="lecturette-list-admin" class="lecturette-list-admin">
+                <!-- Lecturettes will be dynamically inserted here by JavaScript -->
+            </div>
+            <button id="show-add-form-btn" class="btn btn-green btn-full">
+                <i class="fa-solid fa-plus"></i> Add a New Lecturette
+            </button>
+        </div>
+
+        <!-- View 2: Add/Edit Form (Hidden by default) -->
+        <div id="lecturette-form-view" style="display: none;">
+            <form id="add-lecturette-form" class="app-form">
+                <h2 id="form-title"><i class="fa-solid fa-plus-circle"></i> Add a New Lecturette</h2>
+                <input type="hidden" id="edit-lecturette-id"> <!-- To store the index for editing -->
+
+                <div class="form-group">
+                    <label for="topicName">Topic Name</label>
+                    <input type="text" id="topicName" required placeholder="e.g., India's Foreign Policy">
+                </div>
+                <div class="form-group">
+                    <label for="topicContent">Lecturette Content</label>
+                    <textarea id="topicContent" rows="15" required
+                        placeholder="Start writing the full lecturette here..."></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" id="cancel-btn" class="btn btn-secondary">Cancel</button>
+                    <button type="submit" class="btn btn-green">Save Lecturette</button>
+                </div>
+                <p id="success-message" class="success"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Universal Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="designer-info">
+                <i class="fa-solid fa-heart"></i> Designed & Developed by Aniruddh Joshi
+            </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aniruddhjoshi2904/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i> LinkedIn</a>
+
+                <!-- NEWLY ADDED INSTAGRAM LINK -->
+                <a href="https://www.instagram.com/aniruddh.joshi_" target="_blank"><i
+                        class="fa-brands fa-instagram"></i> Instagram</a>
+
+                <a href="mailto:aniruddh.joshi2904@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+            <p class="copyright">
+                © 2025 SSB Lecturette Guide - All rights reserved
+            </p>
+            <p class="tagline">
+                Empowering SSB aspirants with comprehensive preparation resources
+            </p>
+        </div>
+    </footer>
+
+    <!-- Local JavaScript File -->
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

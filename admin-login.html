@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - SSB Lecturette</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="index.html" class="back-to-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+    <main class="login-main">
+        <div class="login-card">
+            <i class="fa-solid fa-shield-halved card-icon"></i>
+            <h2>Admin Login</h2>
+            <p>Enter your credentials to access the admin dashboard</p>
+
+            <form id="admin-login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Enter password" required>
+                        <i class="fa-solid fa-eye eye-icon" id="togglePassword"></i>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-green btn-full">Login to Admin Dashboard</button>
+                <p id="error-message" class="error"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="designer-info">
+                <i class="fa-solid fa-heart"></i> Designed & Developed by Aniruddh Joshi
+            </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aniruddhjoshi2904/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i> LinkedIn</a>
+
+                <!-- NEWLY ADDED INSTAGRAM LINK -->
+                <a href="https://www.instagram.com/aniruddh.joshi_" target="_blank"><i
+                        class="fa-brands fa-instagram"></i> Instagram</a>
+
+                <a href="mailto:aniruddh.joshi2904@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </div>
+            <p class="copyright">
+                © 2025 SSB Lecturette Guide - All rights reserved
+            </p>
+            <p class="tagline">
+                Empowering SSB aspirants with comprehensive preparation resources
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
