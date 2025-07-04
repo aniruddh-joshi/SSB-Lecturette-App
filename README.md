@@ -3,7 +3,7 @@
 A professional, full-featured web application for managing and accessing SSB (Services Selection Board) lecturette topics with advanced text-to-speech capabilities and real-time cloud synchronization.
 
 **Designed & Developed by Aniruddh Joshi**
-https://ssb-lecturette-guide.netlify.app/
+# https://ssb-lecturette-guide.netlify.app/
 ---
 
 ## 🌟 **Project Overview**
